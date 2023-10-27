@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExcelViz Pro</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="main.py" class="hero-btn">Use Visualizer</a></li>
+                    <li><a href="feedbackform.html">FEEDBACK FORM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Productive and Effiecient as Ever!</h1>
+            <p>Business analysts can quickly explore and visualize data. Researchers can transform and analyze research data. Educators can create interactive data demonstrations for students.</p>
+            <a href="main.py" class="hero-btn">Use Visualizer</a>
+        </div>
+    </section>
+    
+
+
+
+<section class="cta">
+    
+       <h1>Gve us FeedBack!</h1>
+        <a href="feedbackform.html" class="hero-btn">Feedback Form</a>
+    
+</section>    
+ 
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>0</h4>
+        <p>0</p>
+        <div class="icons">
+            <a href="feedbackform.html"><i class="fa fa-facebook"></i></a>
+            <a href="feedbackform.html"><i class="fa fa-twitter"></i></a>
+            <a href="feedbackform.html"><i class="fa fa-instagram"></i></a>
+            <a href="feedbackform.html"><i class="fa fa-linkedin"></i></a>
+            
+        </div>
+        <a href="feedbackform.html" class="footer-link"><p>made by ExcelVix Professionals</p></a>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>
+
+
+
+
+
+
+
