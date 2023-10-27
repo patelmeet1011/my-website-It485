@@ -69,7 +69,16 @@
         navLinks.style.right = "-200px";
     }
 </script> 
-    
+    <button onclick="runVisualizer()">Run Visualizer</button>
+
+<script>
+function runVisualizer() {
+  // Make an AJAX request to the main.py code to run the app.
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "/main.py");
+  xhr.send();
+}
+</script>
 </body>
 </html>
 
