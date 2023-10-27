@@ -4,6 +4,11 @@ import plotly.express as px  # pip install plotly-express
 import base64  # Standard Python Module
 from io import StringIO, BytesIO  # Standard Python Module
 
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="main.py" class="hero-btn">Use Visualizer</a></li>
+<li><a href="feedbackform.html">FEEDBACK FORM</a></li>
+<li><a href="contact.html">CONTACT</a></li>
 
 def generate_excel_download_link(df):
     # Credit Excel: https://discuss.streamlit.io/t/how-to-add-a-download-excel-csv-function-to-a-button/4474/5
