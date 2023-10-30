@@ -65,4 +65,9 @@ if uploaded_file:
     generate_excel_download_link(df_grouped)
     generate_html_download_link(fig)
 
+# Embed the content of the "visualizer.html" file
+with open("visualizer.html", "r") as f:
+    html_content = f.read()
+st.components.v1.html(html_content)
+
 
