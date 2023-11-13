@@ -1,14 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ExcelViz Pro</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExcelViz Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
+
 <body>
     <section class="sub-header">
-        <nav>
+        nav>
             <a href="index.html"><img src="logo.png"></a>
             <div class="nav-links" id="navLinks">  
                 <i class="fa fa-close" onclick="hideMenu()"></i>
@@ -24,33 +41,15 @@
         </nav>
             <h1>Excel Visualizer</h1>
     </section>
-    <iframe src="https://excelvizpro1234.streamlit.app/?embed=true" style="width: 100%; height: 100vh; border: none;"></iframe>
 
+    <iframe src="https://excelvizpro1234.streamlit.app/?embed=true" id="streamlitFrame"></iframe>
 
-    
     <section class="course">
         <h1>Benfits of our Visualizer</h1>
         <p>Simplifies Excel data analysis and visualization.<br>Eliminates the need for complex spreadsheet software.<br>Streamlines data transformation and chart creation.<br>Enhances data-driven decision-making.</p>
-        
     </section>
-    
 
-<!-------- footer ---------->
-
-<section class="footer">
-        <h4>0</h4>
-        <p>0</p>
-        <div class="icons">
-            <a href="feedbackform.html"><i class="fa fa-facebook"></i></a>
-            <a href="feedbackform.html"><i class="fa fa-twitter"></i></a>
-            <a href="feedbackform.html"><i class="fa fa-instagram"></i></a>
-            <a href="feedbackform.html"><i class="fa fa-linkedin"></i></a>
-        </div>
-        <p>made by ExcelVix Professionals</p>
-</section>    
-  
-  
-<!----JavaScript for toggle menu---->
+    <!----JavaScript for toggle menu---->
 <script>
     var navLinks = document.getElementById("navLinks");
 
@@ -62,6 +61,18 @@
         navLinks.style.right = "-200px";
     }
 </script>  
-    
+
+    <script>
+        // Dynamically set the height of the iframe to the viewport height
+        function setIframeHeight() {
+            var iframe = document.getElementById('streamlitFrame');
+            iframe.style.height = window.innerHeight + 'px';
+        }
+
+        // Call the function initially and on window resize
+        setIframeHeight();
+        window.addEventListener('resize', setIframeHeight);
+    </script>
 </body>
-</html>    
+
+</html>
