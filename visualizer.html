@@ -12,12 +12,105 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        section.sub-header {
+            background: #252525;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            color: white;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        section.sub-header h1 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        nav {
+            padding-top: 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            width: 150px;
+            padding-left: 5%;
+        }
+
+        nav .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul {
+            display: inline;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        .fa-bars,
+        .fa-close {
+            display: none;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            margin-right: 5%;
+        }
+
+        @media (max-width: 768px) {
+            .fa-bars {
+                display: block;
+            }
+
+            nav ul {
+                position: absolute;
+                top: 80px;
+                background: #333;
+                width: 100%;
+                text-align: left;
+                display: none;
+            }
+
+            nav ul.show {
+                display: block;
+            }
+
+            nav ul li {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .fa-close {
+                display: block;
+            }
         }
 
         iframe {
             width: 100%;
             height: 100vh;
             border: none;
+            margin-top: 60px;
         }
     </style>
 </head>
@@ -26,8 +119,9 @@
     <section class="sub-header">
         <nav>
             <a href="index.html"><img src="logo.png"></a>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-close" onclick="hideMenu()"></i>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -36,7 +130,6 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <h1>Excel Visualizer</h1>
     </section>
@@ -47,11 +140,11 @@
         var navLinks = document.getElementById("navLinks");
 
         function showMenu() {
-            navLinks.style.right = "0";
+            navLinks.classList.add('show');
         }
 
         function hideMenu() {
-            navLinks.style.right = "-200px";
+            navLinks.classList.remove('show');
         }
     </script>
 </body>
