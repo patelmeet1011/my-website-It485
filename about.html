@@ -1,73 +1,194 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ExcelViz Pro</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExcelViz Pro - Team Section</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="sub-header">
         <nav>
-            <a href="index.html"><img src="logo.png"></a>
+            <a href="index.html"><img src="images/logo.png" alt="ExcelViz Pro"></a>
             <div class="nav-links" id="navLinks">  
                 <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="visualizer.html">VISUALIZER</a></li>
-                    <li><a href="feedbackform.html">FEEDBACK FORM</a></li>
+                    <li><a href="feedbackform.html">FAQs</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>   
-            <h1>About Us</h1>
+        <h1>Our Team</h1>
     </section>
     
-    
-<!------- about us content -------->
-    
-<section class="about-us">
-    <div class="row">
-        <div class="about-col">
-            <h1>Information about Program Designers</h1>     
-            <p>Ameer Alshrafi -> Front-end (Senior, Track:- System Administration).<br>Biruk Tadesse -> Front-end (Senior, Track:- System Administration).<br>Meet Patel -> Back-end (Senior, Track:- Business intelligence).<br>Shubh Patel->Back-end (Senior, Track:- Business intelligence).<br>Wayne Zhang-> Front-end (Senior, Track:- System Administration)</p>
-            <a href="contact.html" class="hero-btn red-btn">Contact Us</a>
-        </div>
-        <div class="about-col">
-            <img src="about.jpg">
-        </div>
-    </div>    
-</section>
-    
-<!-------- footer ---------->
+    <!-- About Us Content -->
+    <section id="team">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Team Member Slides -->
+                <div class="swiper-slide">
+                    <div class="team-slider-box">
+                        <div class="t-s-img">
+                            <img src="images/t-1-color.png" alt="Ameer Alshrafi">
+                        </div>
+                        <div class="t-s-text">
+                            <strong>Ameer Alshrafi</strong>
+                            <span>Web Developer</span>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--==2==================-->
+            <div class="swiper-slide">
+                <!--slider-box-->
+                <div class="team-slider-box">
+                <!--==Img==================-->
+                <div class="t-s-img">
+                    <img src="images/t-2.png" alt="team"/>
+                </div>
+                <!--==Text=================-->
+                <div class="t-s-text">
+                    <strong>Meet Patel</strong>
+                    <span>App Developer</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-<section class="footer">
-        <h4></h4>
-        <p></p>
+
+            <!--==3==================-->
+            <div class="swiper-slide">
+                <!--slider-box-->
+                <div class="team-slider-box">
+                <!--==Img==================-->
+                <div class="t-s-img">
+                    <img src="images/t-3.png" alt="team"/>
+                </div>
+                <!--==Text=================-->
+                <div class="t-s-text">
+                    <strong>Biruk Tadesse</strong>
+                    <span>Quality Assurance</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <!--==4==================-->
+            <div class="swiper-slide">
+                <!--slider-box-->
+                <div class="team-slider-box">
+                <!--==Img==================-->
+                <div class="t-s-img">
+                    <img src="images/t-4.png" alt="team"/>
+                </div>
+                <!--==Text=================-->
+                <div class="t-s-text">
+                    <strong>Wayne Zhang</strong>
+                    <span>Web Developer</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <!--==5==================-->
+            <div class="swiper-slide">
+                <!--slider-box-->
+                <div class="team-slider-box">
+                <!--==Img==================-->
+                <div class="t-s-img">
+                    <img src="images/t-5.png" alt="team"/>
+                </div>
+                <!--==Text=================-->
+                <div class="t-s-text">
+                    <strong>Shubh Patel</strong>
+                    <span>App Developer</span>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Contact Us</h4>
+        <p>Your contact information here</p>
         <div class="icons">
-            <a href="feedbackform.html"><i class="fa fa-facebook"></i></a>
-            <a href="feedbackform.html"><i class="fa fa-twitter"></i></a>
-            <a href="feedbackform.html"><i class="fa fa-instagram"></i></a>
-            <a href="feedbackform.html"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
         </div>
-        <p>made by ExcelVix Professionals</p>
-</section>    
-  
-  
-<!----JavaScript for toggle menu---->
-<script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu() {
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu() {
-        navLinks.style.right = "-200px";
-    }
-</script> 
+        <p>Made by ExcelVix Professionals</p>
+    </section>
     
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: -20,
+          depth: 120,
+          modifier: 3,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
 </body>
-</html>    
+</html>
+
